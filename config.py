@@ -43,7 +43,7 @@ class Config:
         self.PRELOAD_COUNT: int = max(0, int(getenv("PRELOAD_COUNT", "0")))
 
         # NexGenBots / ArtistBots API
-        self.API_URL: str = getenv("API_URL", getenv("ARTISTBOTS_API_URL", "https://www.artistbotsapi.bond")
+        self.API_URL: str = getenv("API_URL", getenv("ARTISTBOTS_API_URL", "https://www.artistbotsapi.bond"))
         self.VIDEO_API_URL: str = getenv("VIDEO_API_URL", "https://api.video.nexgenbots.xyz")
         self.API_KEY: str = getenv("API_KEY", getenv("ARTISTBOTS_KEY", "Artistbotslqk72hsztb1bc"))
         self.ARTISTBOTS_API_URL: str = getenv("ARTISTBOTS_API_URL", self.API_URL)
